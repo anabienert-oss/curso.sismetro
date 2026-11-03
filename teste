@@ -1,1 +1,21 @@
-texto
+alunos = [ 
+    {'nome' : 'Ana', 'notas' : [8, 10], 'idade' : 15}, 
+    {'nome' : 'Estevan', 'notas' : [9, 7], 'idade' : 15},
+    {'nome' : 'Rafael', 'notas' : [10, 10], 'idade' : 15}, 
+    {'nome' : 'Eduardo', 'notas' : [8, 9], 'idade' : 15},
+    {'nome' : 'Bruno', 'notas' : [8, 8], 'idade' : 15}, 
+    {'nome' : 'Yasmin', 'notas' : [9, 10], 'idade' : 15},
+    {'nome' : 'Guilherme', 'notas' : [6, 9], 'idade' : 15}, 
+    {'nome' : 'Arthur', 'notas' : [9, 9], 'idade' : 15}
+    
+] 
+
+def avg(soma, qtde): 
+    return soma / qtde 
+
+for aluno in alunos: 
+    qtde_notas = len(aluno['notas']) 
+    soma = sum(aluno['notas']) 
+    
+    nota = avg(soma, qtde_notas)
+    print(f'Aluno: {aluno['nome']}, Nota: {nota}')
